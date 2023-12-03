@@ -279,7 +279,7 @@ display: flex;         /* 启用Flexbox布局 */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 88vh;
     align-items: stretch; /* 使所有项目的高度一致 */
 
 }
