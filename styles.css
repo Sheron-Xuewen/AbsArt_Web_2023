@@ -280,7 +280,6 @@ display: flex;         /* 启用Flexbox布局 */
     justify-content: center;
     align-items: center;
     height: 90vh;
-    .scene4 {
     align-items: stretch; /* 使所有项目的高度一致 */
 }
 
