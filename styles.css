@@ -313,3 +313,23 @@ display: flex;         /* 启用Flexbox布局 */
 #scene4 a:visited { /* 已访问链接的样式 */
     color: #ADD8E6; /* 例如浅蓝色 */
 }
+
+@media (max-width: 800px) {
+    .scene4card {
+        width: 90%; /* 在小屏幕上占满更多空间 */
+    }
+    .scene4 {
+        min-height: 250vh; /* 或者设置一个足够大的固定高度 */
+        padding: 0px 0px 60px 0px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1400px) {
+    .scene4card {
+        width: 30%; /* 在小屏幕上占满更多空间 */
+    }
+    .scene4 {
+        min-height: 250vh; /* 屏幕宽度在800px到1400px时，设置更大的高度 */
+        padding: 0px 0px 60px 0px;
+    }
+}
