@@ -286,7 +286,7 @@ display: flex;         /* 启用Flexbox布局 */
 
 .scene4card {
     padding: 10px;
-    margin: 10px;
+    margin: 10px 10px 20px;
     width: calc(90% / 3 - 20px); /* 三个横排 */
     border: 3px solid #806b2a; /* 暗金色边框 */
     color: #ffffff; /* 暗棕色文本 */
