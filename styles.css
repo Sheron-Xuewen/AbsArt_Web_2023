@@ -1,0 +1,315 @@
+html, body {
+    font-family: Arial, sans-serif;
+    background-color:#000000;;
+    font-weight: 350; /* 300是比较细的字体权重，前提是字体支持这个权重 */
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.top-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0),rgb(0, 0, 0));
+
+    text-align: center;
+}
+
+.top-navigation li {
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.top-navigation li:hover {
+    background: linear-gradient(to bottom right, #ff5e00, rgb(0, 0, 0));
+}
+
+.bottom-navigation {
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0),rgb(0, 0, 0));
+    font-weight: 350;
+    color: rgb(255, 255, 255); /* 文字颜色 */
+    text-align: center; /* 文字居中对齐 */
+    padding: 15px 0; /* 上下内填充20px，左右0 */
+    position: fixed; /* 固定在底部 */
+    bottom: 0; /* 底部对齐 */
+    width: 100%; /* 宽度100% */
+    font-size: 14px; /* 设置字号为14 */
+    z-index: 10; /* z-index设置为10，确保它位于页面其他内容之上 */
+}
+
+.scene-container {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px); /* Adjust height based on nav height */
+}
+
+
+
+/* 默认显示第一个场景 */
+.scene:first-of-type {
+    display: block;
+}
+
+
+.unique-gif {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 4px 10px #000000; /* 添加阴影 */
+}
+
+
+.scene#Home {
+    background-color:#000000;;
+    min-height: 85vh; /* 或者设置一个足够大的固定高度 */
+    position: relative; /* 用于定位伪元素 */
+    display: flex;
+    align-items: center; /* 标题居中 */
+    padding: 0px 0px 50px 0px;
+    flex-wrap: nowrap; /* 防止内容折行 */
+    overflow: hidden;
+}
+
+
+.scene1 {
+    min-height: 90vh; /* 或者设置一个足够大的固定高度 */
+    background: linear-gradient(135deg, #e9b44c, #9b2915, rgb(157, 191, 221)); 
+    display: flex;
+    justify-content: space-between;
+}
+
+.scene1-left {
+    display: flex;         /* 启用Flexbox布局 */
+    width: 50%;
+    align-items: center;     /* 垂直居中 */
+}
+
+.scene1-right {
+display: flex;         /* 启用Flexbox布局 */
+    width: 50%;
+    align-items: center;     /* 垂直居中 */
+}
+
+.scene1-left img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #907a39;  /* 添加画框，颜色可以自定义 */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+}
+
+
+.scene1-left {
+    /* 适当调整以适应动图 */
+    padding: 10px;
+}
+
+.scene1-right {
+    padding: 0 10px;
+}
+
+
+.box1 {
+    font-family: Arial, sans-serif;
+    font-weight: 350; /* 300是比较细的字体权重，前提是字体支持这个权重 */
+    display: flex;       /* 启用Flexbox布局 */
+    flex-direction: column; /* 确保内容垂直堆叠 */
+    padding: 10px 20px;
+    border: 1px solid #ffffff;    /* 边框 */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+    color: rgb(255, 255, 255); /* 文字颜色 */
+    overflow: auto;       /* 如果内容超出盒子大小，自动添加滚动条 */
+}
+
+@media (max-width: 1000px) {
+    .scene1 {
+        min-height: 160vh;
+        flex-direction: column; /* 将flex方向改为竖直排列 */
+        padding: 0px 0px 55px 0px;
+    }
+
+    .scene1-left, .scene1-right {
+        width: 95%; /* 在小屏幕上，左右部分各占满整个容器宽度 */
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1480px) {
+    .scene1 {
+        min-height: 100vh;
+        padding: 0px 0px 55px 0px;
+    }
+}
+
+.scene2 {
+    background: radial-gradient(circle at center, #000000, #4e0000, #800000, #a0522d, #c19a6b); /* 中心向外的深红色到棕褐色渐变 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.scene2card {
+    padding: 20px;
+    margin: 10px;
+    width: calc(90% / 3 - 20px); /* 三个横排 */
+    border: 3px solid #806b2a; /* 暗金色边框 */
+    color: #ffffff; /* 暗棕色文本 */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    transition: all 0.3s ease;
+}
+
+#card010 {
+    background: linear-gradient(135deg, #e9b44c, #9b2915); /* 橙色到红棕色渐变 */
+}
+
+#card020 {
+    background: linear-gradient(135deg, #9b2915, #50a2a7); /* 红棕色到蓝绿色渐变 */
+}
+
+#card030 {
+    background: linear-gradient(135deg, #50a2a7, #e9b44c); /* 蓝绿色到橙色渐变 */
+}
+
+@media (max-width: 800px) {
+    .scene2card {
+        width: 90%; /* 在小屏幕上占满更多空间 */
+    }
+    .scene2 {
+        min-height: 200vh; /* 或者设置一个足够大的固定高度 */
+        padding: 0px 0px 60px 0px;
+    }
+}
+
+@media (min-width: 801px) and (max-width: 1400px) {
+    .scene2card {
+        width: 30%; /* 在小屏幕上占满更多空间 */
+    }
+    .scene2 {
+        min-height: 200vh; /* 屏幕宽度在800px到1400px时，设置更大的高度 */
+        padding: 0px 0px 55px 0px;
+    }
+}
+
+.scene3 {
+    background: radial-gradient(circle at center, #b56247 0%, #ae6c4d 25%, #9f7a5a 50%, #cfb79f 75%, #e4d6c3 100%);
+    display: flex;
+    height: 90vh;
+}
+
+.left-part, .right-part {
+    align-items: center; /* 水平居中对齐子元素 */
+    display: flex;
+    flex-direction: column;
+}
+
+.left-part {
+    flex: 4; /* 左侧部分占据6份空间 */
+}
+
+.right-part {
+    flex: 6; /* 右侧部分占据4份空间 */
+}
+
+.card {
+    padding: 5px 10px;
+    margin: 10px 10px 0 0;
+    width: 95%; 
+    border: 3px solid #80542a; /* 暗金色边框 */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    transition: all 0.3s ease;
+}
+
+#card040 {
+    background: linear-gradient(135deg, rgb(190, 116, 78),rgb(207, 173, 167)); /* 暗沙色到淡粉灰色的渐变，象征历史的深邃和材料的细腻 */
+    color: #ffffff; /* 暗棕色文本 */
+}
+
+
+#card050 {
+    background: linear-gradient(135deg, #d1a684, #a38db7, #c99cc9); /* 从暖棕色到紫罗兰，再到紫红色，形成丰富而和谐的对比 */
+    color: #ffffff; /* 暗棕色文本 */
+}
+
+#card060 {
+    background: linear-gradient(135deg, #d5c7e2, #c6c6dc, #ffffff); /* 从浅海蓝到浅紫色，再到淡灰色，象征生命的流动和形状的抽象 */
+}
+
+
+
+.left-part img {
+    width: 70%;
+    height: auto;
+    border: 3px solid #ac8b6d; /* 暗金色边框 */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* 添加阴影效果 */
+    margin: 5px;
+}
+
+
+@media (max-width: 1000px) {
+    .scene3 {
+        flex-direction: column; /* 在小屏幕上改为竖直排列 */
+        min-height: 220vh; 
+        padding: 0px 0px 100px 0px;
+    }
+    .scene3card {
+        width: 90%; /* 在小屏幕上占满更多空间 */
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1470px) {
+    .scene3 {
+        min-height: 120vh; /* 屏幕宽度在800px到1400px时，设置更大的高度 */
+        padding: 0px 0px 60px 0px;
+    }
+    .scene3card {
+        width: 90%; /* 在小屏幕上占满更多空间 */
+    }
+}
+
+
+.scene4 {
+    background: radial-gradient(circle at center, #000000, #4e0000, #800000, #a0522d, #c19a6b); /* 中心向外的深红色到棕褐色渐变 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.scene4card {
+    padding: 20px;
+    margin: 10px;
+    width: calc(90% / 3 - 20px); /* 三个横排 */
+    border: 3px solid #806b2a; /* 暗金色边框 */
+    color: #ffffff; /* 暗棕色文本 */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* 阴影效果 */
+    transition: all 0.3s ease;
+}
+
+#card070 {
+    display: flex;        
+    flex-direction: column; /* 添加这一行来改变子元素的排列方向 */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.centered-image {
+    width: 50%;         /* 图片宽度适应盒子宽度 */
+    height: auto;        /* 高度自适应，保持原有宽高比 */
+}
+
+
+#scene4 a { /* 所有链接的默认样式 */
+    color: #B0C4DE; /* 例如浅钢蓝色 */
+    text-decoration: none; /* 如果不需要下划线可以加这个 */
+}
+#scene4 a:visited { /* 已访问链接的样式 */
+    color: #ADD8E6; /* 例如浅蓝色 */
+}
