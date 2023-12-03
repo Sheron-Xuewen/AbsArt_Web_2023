@@ -279,9 +279,9 @@ display: flex;         /* 启用Flexbox布局 */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    height: 85vh;
     align-items: stretch; /* 使所有项目的高度一致 */
-    padding: 0px 0px 50px 0px;
+
 }
 
 .scene4card {
