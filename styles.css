@@ -321,7 +321,7 @@ display: flex;         /* 启用Flexbox布局 */
         width: 90%; /* 在小屏幕上占满更多空间 */
     }
     .scene4 {
-        min-height: 250vh; /* 或者设置一个足够大的固定高度 */
+        min-height: 300vh; /* 或者设置一个足够大的固定高度 */
         padding: 0px 0px 60px 0px;
     }
 }
@@ -331,7 +331,7 @@ display: flex;         /* 启用Flexbox布局 */
         width: 30%; /* 在小屏幕上占满更多空间 */
     }
     .scene4 {
-        min-height: 250vh; /* 屏幕宽度在800px到1400px时，设置更大的高度 */
+        min-height: 300vh; /* 屏幕宽度在800px到1400px时，设置更大的高度 */
         padding: 0px 0px 60px 0px;
     }
 }
