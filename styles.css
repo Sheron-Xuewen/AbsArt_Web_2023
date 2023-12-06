@@ -237,7 +237,7 @@ display: flex;         /* 启用Flexbox布局 */
 }
 
 #card060 {
-    background: linear-gradient(135deg, #D5C7FF, #C6C6F5, #ffffff); /* 从浅海蓝到浅紫色，再到淡灰色，象征生命的流动和形状的抽象 */
+    background: linear-gradient(135deg, #D5C7FF, #C6C6FF, #ffffff); /* 从浅海蓝到浅紫色，再到淡灰色，象征生命的流动和形状的抽象 */
 }
 
 
