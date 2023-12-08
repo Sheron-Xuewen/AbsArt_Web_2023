@@ -6,6 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     window.showScene = function(index) {
         console.log('Showing scene', index);
         scenes.forEach(scene => scene.style.display = 'none');
+
+        const topNavItems = document.querySelectorAll('.top-navigation li');
+        topNavItems.forEach((item, idx) => {
+            if (idx === index) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        });
+
+        
         scenes[index].style.display = 'block';
         currentSceneIndex = index;
     };
