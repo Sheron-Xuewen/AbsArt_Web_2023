@@ -335,3 +335,9 @@ display: flex;         /* 启用Flexbox布局 */
         padding: 0px 0px 60px 0px;
     }
 }
+
+/* 在 .top-navigation li 和 .top-navigation li:hover 后面添加 */
+.top-navigation li.active {
+    background: linear-gradient(to bottom right, rgb(167, 158, 92), rgb(92, 167, 95));
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+}
