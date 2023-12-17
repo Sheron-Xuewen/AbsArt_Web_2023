@@ -11,6 +11,7 @@ html, body {
 
 
 .top-navigation ul {
+    font-size: 0;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -21,7 +22,7 @@ html, body {
 
 .top-navigation li {
     display: inline-block;
-    padding: 10px 0;
+    padding: 10px;
     color: white;
     cursor: pointer;
 }
