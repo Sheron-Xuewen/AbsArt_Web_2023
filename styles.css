@@ -21,7 +21,7 @@ html, body {
 
 .top-navigation li {
     display: inline-block;
-    padding: 0px;
+    padding: 10px;
     color: white;
     cursor: pointer;
 }
