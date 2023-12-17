@@ -20,7 +20,7 @@ html, body {
 
 .top-navigation li {
     display: inline-block;
-    padding: 20px; /* 仅保留上下内边距 */
+    padding: 10px 20px; /* 仅保留上下内边距 */
     color: white;
     cursor: pointer;
 }
