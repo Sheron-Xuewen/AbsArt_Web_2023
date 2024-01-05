@@ -13,7 +13,7 @@ html, body {
 #overlayGif {
     mix-blend-mode: multiply; /* 使得白色部分与背景融合 */
     /* 调整色相 */
-    filter: hue-rotate(15deg); /* 可能需要调整这个值来获得理想的颜色 */
+    filter: hue-rotate(50deg); /* 可能需要调整这个值来获得理想的颜色 */
     position: fixed;  /* 固定位置，始终位于页面顶部 */
     top: 50%;         /* 从顶部开始的50%位置 */
     left: 0;          /* 从左侧开始 */
