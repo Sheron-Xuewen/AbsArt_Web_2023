@@ -9,6 +9,17 @@ html, body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* 添加到你的CSS文件或<style>标签中 */
+#overlayGif {
+    position: fixed;  /* 固定位置，始终位于页面顶部 */
+    top: 50%;         /* 从顶部开始的50%位置 */
+    left: 0;          /* 从左侧开始 */
+    width: 100%;      /* 宽度等于页面宽度 */
+    transform: translateY(-50%); /* 垂直居中 */
+    z-index: 1000;    /* 确保它位于其他元素之上 */
+    pointer-events: none; /* 允许鼠标事件穿透 */
+}
+
 
 .top-navigation ul {
     list-style: none;
